@@ -1,1 +1,84 @@
- Binary Search
+🔍 What is a Binary Search Tree (BST)?
+A Binary Search Tree (BST) is a special type of binary tree where each node follows a specific rule:
+
+Left child has smaller value than the node.
+
+Right child has greater value than the node.
+
+🌳 Example of a BST:
+markdown
+Copy
+Edit
+        10
+       /  \
+      5    15
+     / \     \
+    2   7     20
+All nodes on the left of 10 are less than 10.
+
+All nodes on the right of 10 are greater than 10.
+
+This rule applies recursively to every node.
+
+🧠 Why is BST useful?
+Because it allows us to:
+
+Search for values fast (average time: O(log n))
+
+Insert new values
+
+Delete values
+
+Sort data easily (via in-order traversal)
+
+🔧 Main Operations:
+Search(value)
+
+Start from the root.
+
+If value < current node → go left.
+
+If value > current node → go right.
+
+Repeat until found or reach a null.
+
+Insert(value)
+
+Find the correct empty spot (left or right), and insert.
+
+Delete(value)
+
+Three cases:
+
+Node has no children → remove it.
+
+Node has one child → replace it with the child.
+
+Node has two children → replace with smallest value in right subtree.
+
+📘 Summary:
+Feature	Description
+Type	Binary tree
+Left < Node	Always true
+Right > Node	Always true
+Time Complexity	O(log n) average (if balanced)
+Used For	Searching, inserting, deleting data
+=========================================================Simple example of BST
+🧠 Think of a BST Like This:
+Imagine you're building a family tree, but with numbers.
+
+Each number (node) can have:
+
+Left child (smaller number)
+
+Right child (larger number)
+
+You start from the root node and place each number in the correct spot based on size.
+
+📏 BST Rules (Very Simple):
+Each node has at most 2 children.
+
+The left child must be less than the node.
+
+The right child must be greater than the node.
+

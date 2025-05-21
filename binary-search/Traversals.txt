@@ -1,0 +1,36 @@
+🔄 Traversals ARE part of the Binary Search Tree concept — they are how we visit all the nodes in the tree, usually to read or process the data.
+
+🌳 What Is Tree Traversal?
+Traversal means visiting every node in the tree exactly once, in a specific order.
+
+look at this tree
+        10
+       /  \
+      5    15
+     / \     \
+    2   7     20
+
+1. In-order (left → root → right)
+
+Visit left, then current, then right
+This gives sorted order in BST!
+Result: 2, 5, 7, 10, 15, 20
+
+2. Pre-order (root → left → right)
+
+Visit current, then left, then right
+Used for copying or saving the tree
+Result: 10, 5, 2, 7, 15, 20
+
+3. Post-order (left → right → root)
+
+Visit left, then right, then current
+Useful for deleting a tree safely
+Result: 2, 7, 5, 20, 15, 10
+
+| Traversal Type | Order             | Use Case             |
+| -------------- | ----------------- | -------------------- |
+| In-order       | Left, Root, Right | Get sorted values    |
+| Pre-order      | Root, Left, Right | Save/copy the tree   |
+| Post-order     | Left, Right, Root | Delete tree safely   |
+| Level-order    | Level by level    | Breadth-first search |
